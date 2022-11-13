@@ -1,7 +1,7 @@
 // React
 import React, { useState } from "react";
 // CSS
-import "./header.css";
+import "./Header.css";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);

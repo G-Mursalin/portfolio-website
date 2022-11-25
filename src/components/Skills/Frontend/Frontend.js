@@ -1,14 +1,14 @@
 import React from "react";
 
 const frontendSkills1 = [
-  { skillName: "HTML", skillLevel: "Intermediate" },
-  { skillName: "CSS", skillLevel: "Intermediate" },
-  { skillName: "Javascript", skillLevel: "Intermediate" },
-  { skillName: "React JS", skillLevel: "Intermediate" },
+  { id: "f1", skillName: "HTML", skillLevel: "Intermediate" },
+  { id: "f2", skillName: "CSS", skillLevel: "Intermediate" },
+  { id: "f3", skillName: "Javascript", skillLevel: "Intermediate" },
+  { id: "f4", skillName: "React JS", skillLevel: "Intermediate" },
 ];
 const frontendSkills2 = [
-  { skillName: "Bootstrap", skillLevel: "Intermediate" },
-  { skillName: "Tailwind CSS", skillLevel: "Intermediate" },
+  // { id: "f5", skillName: "Bootstrap", skillLevel: "Intermediate" },
+  // { id: "f6", skillName: "Tailwind CSS", skillLevel: "Intermediate" },
 ];
 const Frontend = () => {
   return (
@@ -16,8 +16,8 @@ const Frontend = () => {
       <h3 className="skills__title">Frontend Skills</h3>
       <div className="skills__box">
         <div className="skills__group">
-          {frontendSkills1?.map((val, i) => (
-            <div key={i} className="skills__data">
+          {frontendSkills1?.map((val) => (
+            <div key={val.id} className="skills__data">
               <i className="bx bx-badge-check"></i>
               <div>
                 <h3 className="skills__name">{val.skillName}</h3>
@@ -27,8 +27,8 @@ const Frontend = () => {
           ))}
         </div>
         <div className="skills__group">
-          {frontendSkills2?.map((val, i) => (
-            <div key={i} className="skills__data">
+          {frontendSkills2?.map((val) => (
+            <div key={val.id} className="skills__data">
               <i className="bx bx-badge-check"></i>
               <div>
                 <h3 className="skills__name">{val.skillName}</h3>

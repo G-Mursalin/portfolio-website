@@ -4,6 +4,11 @@ import React, { useState } from "react";
 import "./Header.css";
 
 const Header = () => {
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    if (this.scrollY >= 560) header.classList.add("scroll-header");
+    else header.classList.remove("scroll-header");
+  });
   const [toggle, setToggle] = useState(false);
   return (
     <header className="header">

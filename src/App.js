@@ -14,6 +14,7 @@ import Services from "./components/Services/Services";
 import Qualification from "./components/Qualification/Qualification";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import ScrollUp from "./components/ScrollUp/ScrollUp";
 
 const App = () => {
   return (
@@ -26,8 +27,9 @@ const App = () => {
         <Services />
         <Qualification />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
+      <ScrollUp />
       <ToastContainer position="top-center" />
     </React.Fragment>
   );

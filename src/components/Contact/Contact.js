@@ -55,9 +55,11 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">user@gmail.com</span>
+              <span className="contact__card-data">
+                golammursalin309@gmail.com
+              </span>
               <a
-                href="mailto:golammursalin309@gmail.com"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=new"
                 target="_blank"
                 className="contact__button"
               >
@@ -81,8 +83,12 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bxl-messenger contact__card-icon"></i>
               <h3 className="contact__card-title">Messenger</h3>
-              <span className="contact__card-data">user.fbi123</span>
-              <a href="" className="contact__button">
+              <span className="contact__card-data">Golam Mursalin</span>
+              <a
+                href="https://www.facebook.com/golammursalin360/"
+                target="_blank"
+                className="contact__button"
+              >
                 Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>

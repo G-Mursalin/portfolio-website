@@ -3,7 +3,7 @@ import React from "react";
 // CSS
 import "./About.css";
 // assets
-import AboutImg from "./../../assets/about.jpg";
+import AboutImg from "./../../assets/golam-mursalin.jpg";
 import CV from "./../../assets/John-Cv.pdf";
 // Icons
 import FilesIcon from "./FilesIcon";
@@ -21,9 +21,13 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-            enim accusantium sint iste temporibus labore dicta perspiciatis ut
-            molestiae.
+            I'm always looking for new challenges and opportunities to grow my
+            skills. I have a strong foundation in HTML, CSS, JavaScript,
+            ReactJS, ExpressJS and MongoDB, and I'm always looking to learn more
+            about emerging technologies. In my spare time, I enjoy designing and
+            building personal projects. I believe that the key to success in
+            this field is a willingness to constantly learn and adapt, and
+            that's a mindset that I bring to every project I work on.
           </p>
           <a download="" href={CV} className="button button--flex">
             Download CV

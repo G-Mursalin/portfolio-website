@@ -6,6 +6,8 @@
 
 .about__img {
   width: 350px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 1.5rem;
   justify-self: center;
 }
@@ -40,7 +42,7 @@
 }
 
 .about__description {
-  padding: 0 4rem 0 0;
+  text-align: justify;
   margin-bottom: var(--mb-2-5);
 }
 

@@ -1,5 +1,7 @@
 // React
 import React from "react";
+// React Router
+import { Link } from "react-router-dom";
 // Components
 import HandIcon from "./HandIcon";
 import SendIcon from "./SendIcon";
@@ -13,15 +15,15 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">Web Developer</h3>
       <p className="home__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-        exercitationem hic ea, repudiandae quas laboriosam esse doloribus
-        voluptas recusandae assumenda mollitia cumque magni dolor! Natus
-        repellat sit earum eius incidunt.
+        I thrive on solving complex problems and bringing ideas to life through
+        code. Whether it's building a sleek, responsive website or creating a
+        custom application, I'm always up for a challenge and driven to exceed
+        expectations.
       </p>
-      <a href="#contact" className="button button--flex home__btn">
+      <Link to="/contact" className="button button--flex home__btn">
         Say Hello
         <SendIcon />
-      </a>
+      </Link>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import "./Home.css";
 import Social from "./Social/Social";
 import Data from "./Data/Data";
 import ScrollDown from "./ScrollDown/ScrollDown";
-
+import Qualification from "../Qualification/Qualification";
 const Home = () => {
   return (
     <section className="home section" id="home">
@@ -18,6 +18,7 @@ const Home = () => {
         </div>
         <ScrollDown />
       </div>
+      <Qualification />
     </section>
   );
 };

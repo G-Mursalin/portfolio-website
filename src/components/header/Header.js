@@ -1,5 +1,7 @@
 // React
 import React, { useState } from "react";
+// React Router
+import { Link } from "react-router-dom";
 // CSS
 import "./Header.css";
 
@@ -13,70 +15,70 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="nav__logo">
+        <Link to="/" className="nav__logo">
           Golam Mursalin
-        </a>
+        </Link>
 
         <div className={`nav__menu ${toggle ? "show-menu" : ""}`}>
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a
-                href="#home"
+              <Link
+                to="home"
                 className="nav__link active-link"
                 onClick={() => setToggle(!toggle)}
               >
                 <i className="uil uil-estate nav__icon"></i>Home
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a
-                href="#about"
+              <Link
+                to="about"
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
                 <i className="uil uil-user nav__icon"></i>About
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a
-                href="#skills"
+              <Link
+                to="skills"
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
                 <i className="uil uil-file-alt nav__icon"></i>Skills
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a
-                href="#services"
+              <Link
+                to="services"
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
                 <i className="uil uil-briefcase-alt nav__icon"></i>Services
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a
-                href="#projects"
+              <Link
+                to="projects"
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
                 <i className="uil uil-scenery nav__icon"></i>Projects
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a
-                href="#contact"
+              <Link
+                to="contact"
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
                 <i className="uil uil-message nav__icon"></i>Contact
-              </a>
+              </Link>
             </li>
           </ul>
 

@@ -44,7 +44,7 @@ const Services = () => {
             </h3>
           </div>
           <p className="services__description">
-            I can develop a full stack web app using MongoDB, Express, React and
+            Develop a full stack web app using MongoDB, Express, React and
             NodeJS. With authentication and authorization, payment system,
             dashboard and many more.
           </p>

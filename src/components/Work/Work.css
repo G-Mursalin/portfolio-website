@@ -38,6 +38,12 @@
   border-radius: 1rem;
 }
 
+.work__cart__button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
 .work__img {
   width: 295px;
   border-radius: 1rem;

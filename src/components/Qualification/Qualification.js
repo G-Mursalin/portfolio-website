@@ -48,12 +48,15 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Designer</h3>
+                <h3 className="qualification__title">
+                  Bangladesh Army University of Science and Technology
+                </h3>
                 <span className="qualification__subtitle">
-                  Spain - industry
+                  Computer Science and Engineering
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
+                  <i className="uil uil-calendar-alt"></i>2019 - 2021(Left the
+                  university)
                 </div>
               </div>
 
@@ -69,23 +72,25 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Web Designer</h3>
+                <h3 className="qualification__title">
+                  Dinajpur Government City College
+                </h3>
                 <span className="qualification__subtitle">
-                  Spain - industry
+                  Higher School Certificate (Science)
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
+                  <i className="uil uil-calendar-alt"></i>Passing Year - 2018
                 </div>
               </div>
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Designer</h3>
+                <h3 className="qualification__title">Dinajpur High School</h3>
                 <span className="qualification__subtitle">
-                  Spain - industry
+                  Secondary School Certificate (Science)
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
+                  <i className="uil uil-calendar-alt"></i>Passing Year - 2016
                 </div>
               </div>
 
@@ -105,12 +110,14 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">sdfsdag</h3>
-                <span className="qualification__subtitle">
-                  Spain - industry
-                </span>
+                <h3 className="qualification__title">
+                  <a href="https://web.programming-hero.com/" target="_blank">
+                    Complete Web Development Course With Jhankar Mahbub
+                  </a>
+                </h3>
+                <span className="qualification__subtitle">Udemy</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
+                  <i className="uil uil-calendar-alt"></i>2022
                 </div>
               </div>
 
@@ -126,23 +133,75 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Web Designer</h3>
-                <span className="qualification__subtitle">
-                  Spain - industry
-                </span>
+                <h3 className="qualification__title">
+                  <a
+                    href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+                    target="_blank"
+                  >
+                    React - The Complete Guide (incl Hooks, React Router, Redux)
+                  </a>
+                </h3>
+                <span className="qualification__subtitle">Udemy</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
+                  <i className="uil uil-calendar-alt"></i>2022
                 </div>
               </div>
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Designer</h3>
-                <span className="qualification__subtitle">
-                  Spain - industry
-                </span>
+                <h3 className="qualification__title">
+                  <a
+                    href="https://www.udemy.com/course/the-complete-javascript-course/"
+                    target="_blank"
+                  >
+                    The Complete JavaScript Course 2021: From Zero to Expert!
+                  </a>
+                </h3>
+                <span className="qualification__subtitle">Udemy</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
+                  <i className="uil uil-calendar-alt"></i>2022
+                </div>
+              </div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">
+                  <a
+                    href="https://www.udemy.com/course/advanced-css-and-sass/"
+                    target="_blank"
+                  >
+                    Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                  </a>
+                </h3>
+                <span className="qualification__subtitle">Udemy</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i>2021
+                </div>
+              </div>
+            </div>
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">
+                  <a
+                    href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+                    target="_blank"
+                  >
+                    Build Responsive Real-World Websites with HTML and CSS
+                  </a>
+                </h3>
+                <span className="qualification__subtitle">Udemy</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i>2021
                 </div>
               </div>
 

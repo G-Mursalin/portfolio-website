@@ -2,38 +2,110 @@
 import dentCare from "./../../assets/DentCare/main.png";
 import dentCareBookingSection from "./../../assets/DentCare/bookingSection.png";
 import dentCareDashboard from "./../../assets/DentCare/dashboard.png";
-import Work2 from "./../../assets/work2.jpg";
-import Work3 from "./../../assets/work3.jpg";
-import Work4 from "./../../assets/work4.jpg";
-import Work5 from "./../../assets/work5.jpg";
+// Tool Planet
+import toolPlanet from "./../../assets/ToolPlanet/main.png";
+import toolPlanetProducts from "./../../assets/ToolPlanet/products-page.png";
+import toolPlanetDashboard from "./../../assets/ToolPlanet/dashboard.png";
+// Dominate
+import dominate from "./../../assets/Dominate/main.png";
+import dominateInventory from "./../../assets/Dominate/inventory.png";
+import dominateInventoryManagement from "./../../assets/Dominate/manageInventory.png";
+// Jobster
+import jobster from "./../../assets/Jobster/main.png";
+import jobsterStats from "./../../assets/Jobster/dashboardStats.png";
+import jobsterAllJobs from "./../../assets/Jobster/dashboardAllJobs.png";
+// Natours
+import natours from "./../../assets/Natours/main.png";
+import natoursTours from "./../../assets/Natours/tours.png";
+import natoursBooking from "./../../assets/Natours/booking.png";
+// Comfy Sloth
+import comfySloth from "./../../assets/ComfySloth/main.png";
+import comfySlothProducts from "./../../assets/ComfySloth/products.png";
+import comfySlothCart from "./../../assets/ComfySloth/cart.png";
 
 export const projectsData = [
+  // Front End
   {
-    id: 1,
-    mainImage: Work5,
-    name: "Project-1",
-    images: [],
-    link: "",
+    id: "fe1",
+    mainImage: natours,
+    name: "Natours",
+    images: [
+      { id: 1, title: "Tours", image: natoursTours },
+      { id: 2, title: "Booking", image: natoursBooking },
+    ],
+    link: "https://natours-1232.netlify.app/",
+    description: "A Static Website For Booking Tours Around The World",
+    overView: [
+      "⛔Designed full website using only vanilla css",
+      "⛔Used SASS for write better CSS code",
+    ],
+    technology: ["♨️HTML", "♨️CSS", "♨️SASS"],
+    gitHubFrontEnd: "https://github.com/G-Mursalin/Natours",
     category: "frontend",
   },
   {
-    id: 2,
-    mainImage: Work2,
-    name: "Project-2",
-    images: [],
-    link: "",
+    id: "fe2",
+    mainImage: comfySloth,
+    name: "Comfy Sloth",
+    images: [
+      { id: 1, title: "Products", image: comfySlothProducts },
+      { id: 2, title: "Cart", image: comfySlothCart },
+    ],
+    link: "https://comfy-sloth-furnitures1.netlify.app/",
+    description: "A Website For Ordering Furniture of Your Comfort",
+    overView: [
+      "⛔Designed full website using only vanilla css",
+      "⛔Used Auth0 for creating users account",
+      "⛔Used Redux toolkit for state management",
+      "⛔Used Stripe for making payment gateway",
+    ],
+    technology: [
+      "♨️ReactJS",
+      "♨️React Router",
+      "♨️Stripe payment service",
+      "♨️Auth0",
+      "♨️NodeJS",
+      "♨️ExpressJS",
+    ],
+    gitHubFrontEnd: "https://github.com/G-Mursalin/Natours",
     category: "frontend",
   },
+  // Backend
   {
-    id: 3,
-    mainImage: Work3,
-    name: "Project-3",
-    images: [],
-    link: "",
+    id: "be1",
+    mainImage: jobster,
+    name: "Jobster",
+    images: [
+      { id: 1, title: "Dashboard Stats", image: jobsterStats },
+      { id: 2, title: "Dashboard All Jobs", image: jobsterAllJobs },
+    ],
+    link: "https://jobster-360.netlify.app/",
+    description: "A Full Stack Application For Managing Jobs Posts",
+    overView: [
+      "⛔Designed full website using only css.(No css framework used)",
+      "⛔Used Redux toolkit for state management",
+      "⛔Used Redux Thunk to handled APIs calls",
+      "⛔Authentication is handled by the backend (expressJS, mongoDB)",
+      "⛔Users can create, update, and delete a job",
+      "⛔Users can edit their profile data",
+    ],
+    technology: [
+      "♨️ReactJS",
+      "♨️React Router",
+      "♨️Redux",
+      "♨️Rechart",
+      "♨️React Toastify",
+      "♨️Jason Web Token",
+      "♨️ExpressJS",
+      "♨️MongoDB",
+    ],
+    gitHubFrontEnd: "https://github.com/G-Mursalin/jobster-frontend",
+    gitHubBackEnd: "https://github.com/G-Mursalin/jobster-backend",
     category: "backend",
   },
+  // Full Stack
   {
-    id: 4,
+    id: "fs1",
     name: "Dent Care",
     mainImage: dentCare,
     images: [
@@ -62,15 +134,77 @@ export const projectsData = [
       "♨️MongoDB",
       "♨️Render",
     ],
+    gitHubFrontEnd: "https://github.com/G-Mursalin/dent-care-frontend",
+    gitHubBackEnd: "https://github.com/G-Mursalin/dent-care-backend",
     category: "fullstack",
   },
   {
-    id: 5,
-    mainImage: Work5,
-    name: "Project-5",
-    images: [],
-    link: "",
-    category: "webapp",
+    id: "fs2",
+    name: "Tool Planet",
+    mainImage: toolPlanet,
+    images: [
+      { id: 1, title: "Products Section", image: toolPlanetProducts },
+      { id: 2, title: "Dashboard", image: toolPlanetDashboard },
+    ],
+    link: "https://tool-planet.firebaseapp.com/",
+    description: "A Full Stack Application For Ordering Tools",
+    overView: [
+      "⛔The Website's data is stored in MongoDB and retrieved via the server-side API where I used Express JS",
+      "⛔Implemented Firebase Authentication (Google Sign in & Email/Password Login). Private Route & Admin Route is implemented for security purposes",
+      "⛔Separate Dashboard available for users and Admins with different facilities",
+      "⛔Used Stripe for making payment gateway",
+    ],
+    technology: [
+      "♨️ReactJS",
+      "♨️Tailwind CSS",
+      "♨️React Firebase Hook",
+      "♨️React Router",
+      "♨️React Form Hook",
+      "♨️DaisyUI",
+      "♨️React Toastify",
+      "♨️ExpressJS",
+      "♨️NodeJS",
+      "♨️Json Web Token",
+      "♨️MongoDB",
+      "♨️Render",
+    ],
+    gitHubFrontEnd: "https://github.com/G-Mursalin/tool-planet-frontend",
+    gitHubBackEnd: "https://github.com/G-Mursalin/tool-planet-backend",
+    category: "fullstack",
+  },
+  {
+    id: "fs3",
+    name: "Dominate",
+    mainImage: dominate,
+    images: [
+      { id: 1, title: "Cars Inventory", image: dominateInventory },
+      {
+        id: 2,
+        title: "Inventory Management",
+        image: dominateInventoryManagement,
+      },
+    ],
+    link: "https://dominate-db3ff.firebaseapp.com/",
+    description: "A Website for Cars Management",
+    overView: [
+      "⛔Implemented firebase authentication system",
+      "⛔Used MongoDB as database",
+      "⛔Add any car",
+      "⛔Delete any car",
+    ],
+    technology: [
+      "♨️ReactJS",
+      "♨️React Firebase Hook",
+      "♨️React Router",
+      "♨️React Model",
+      "♨️React Toastify",
+      "♨️ExpressJS",
+      "♨️NodeJS",
+      "♨️MongoDB",
+    ],
+    gitHubFrontEnd: "https://github.com/G-Mursalin/dominate-frontend",
+    gitHubBackEnd: "https://github.com/G-Mursalin/dominate-backend",
+    category: "fullstack",
   },
 ];
 
@@ -83,8 +217,5 @@ export const projectsNav = [
   },
   {
     name: "fullstack",
-  },
-  {
-    name: "webapp",
   },
 ];

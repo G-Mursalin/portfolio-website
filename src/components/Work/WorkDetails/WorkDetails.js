@@ -5,12 +5,20 @@ import { projectsData } from "../ProjectsData";
 import "./WorkDetails.css";
 // React Router
 import { useParams } from "react-router-dom";
+
 const WorkDetails = () => {
   const { id } = useParams();
 
-  const { name, images, description, overView, technology } = projectsData.find(
-    (val) => val.id === +id
-  );
+  const {
+    name,
+    images,
+    link,
+    description,
+    overView,
+    technology,
+    gitHubFrontEnd,
+    gitHubBackEnd,
+  } = projectsData.find((val) => val.id === id);
 
   return (
     <section className="section">
@@ -26,6 +34,12 @@ const WorkDetails = () => {
           ))}
         </div>
         <div className="work-details__data">
+          <div className="work-details__live-preview">
+            <a href={link} target="_blank">
+              Live Preview
+              <i className="bx bx-right-arrow-alt work__button-icon"></i>
+            </a>
+          </div>
           <div className="work-details__description">
             <h4>Project Overview:</h4>
             <ul>
@@ -39,6 +53,24 @@ const WorkDetails = () => {
             {technology.map((val, i) => (
               <span key={i}>{val}</span>
             ))}
+          </div>
+          <div className="work-details__github">
+            {gitHubFrontEnd && (
+              <div className="github__link-btn work-details__github-frontend">
+                <a href={gitHubFrontEnd} target="_blank">
+                  GitHub Frontend
+                  <i className="bx bx-right-arrow-alt work__button-icon"></i>
+                </a>
+              </div>
+            )}
+            {gitHubBackEnd && (
+              <div className="github__link-btn work-details__github-frontend">
+                <a href={gitHubBackEnd} target="_blank">
+                  GitHub Backend
+                  <i className="bx bx-right-arrow-alt work__button-icon"></i>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>

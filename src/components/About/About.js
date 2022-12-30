@@ -4,7 +4,7 @@ import React from "react";
 import "./About.css";
 // assets
 import AboutImg from "./../../assets/golam-mursalin.jpg";
-import CV from "./../../assets/John-Cv.pdf";
+import CV from "./../../assets/golam_mursalin.pdf";
 // Icons
 import FilesIcon from "./FilesIcon";
 // Components

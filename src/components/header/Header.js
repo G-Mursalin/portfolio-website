@@ -27,7 +27,7 @@ const Header = () => {
                 className="nav__link active-link"
                 onClick={() => setToggle(!toggle)}
               >
-                <i className="uil uil-estate nav__icon"></i>Home
+                Home
               </Link>
             </li>
 
@@ -37,7 +37,7 @@ const Header = () => {
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
-                <i className="uil uil-user nav__icon"></i>About
+                About
               </Link>
             </li>
 
@@ -47,7 +47,7 @@ const Header = () => {
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
-                <i className="uil uil-file-alt nav__icon"></i>Skills
+                Skills
               </Link>
             </li>
 
@@ -57,7 +57,7 @@ const Header = () => {
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i>Services
+                Services
               </Link>
             </li>
 
@@ -67,7 +67,7 @@ const Header = () => {
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
-                <i className="uil uil-scenery nav__icon"></i>Projects
+                Projects
               </Link>
             </li>
 
@@ -77,11 +77,10 @@ const Header = () => {
                 className="nav__link"
                 onClick={() => setToggle(!toggle)}
               >
-                <i className="uil uil-message nav__icon"></i>Contact
+                Contact
               </Link>
             </li>
           </ul>
-
           <i
             className="uil uil-times nav__close"
             onClick={() => setToggle(!toggle)}

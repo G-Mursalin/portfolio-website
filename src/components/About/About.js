@@ -30,7 +30,7 @@ const About = () => {
             that's a mindset that I bring to every project I work on.
           </p>
           <a download="" href={CV} className="button button--flex">
-            Download CV
+            Download Resume
             <FilesIcon />
           </a>
         </div>

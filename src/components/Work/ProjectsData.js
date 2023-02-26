@@ -113,7 +113,8 @@ export const projectsData = [
       { id: 2, title: "Dashboard", image: dentCareDashboard },
     ],
     link: "https://dent-care-39dfe.firebaseapp.com/",
-    description: "A Full Stack Application For Managing A Clinic Center",
+    description:
+      "A Full Stack Application For Managing A Clinic Center. Users, Doctors, And Admins Can Manage Their Activities. A Role Based Authentication System. Implement A Multi-Layer Dashboard. Connect Server Side For Role Based Access To A Secure API",
     overView: [
       "⛔The Website's data is stored in MongoDB and retrieved via the server-side API where I used Express JS",
       "⛔Implemented Firebase Authentication (Google Sign in & Email/Password Login). Private Route & Admin Route is implemented for security purposes",
@@ -134,8 +135,8 @@ export const projectsData = [
       "♨️MongoDB",
       "♨️Render",
     ],
-    gitHubFrontEnd: "https://github.com/G-Mursalin/dent-care-frontend",
-    gitHubBackEnd: "https://github.com/G-Mursalin/dent-care-backend",
+    gitHubFrontEnd: "https://github.com/G-Mursalin/dent-care-front-end",
+    gitHubBackEnd: "https://github.com/G-Mursalin/dent-care-back-end",
     category: "fullstack",
   },
   {

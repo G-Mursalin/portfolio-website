@@ -10,6 +10,10 @@ import toolPlanetDashboard from "./../../assets/ToolPlanet/dashboard.png";
 import dominate from "./../../assets/Dominate/main.png";
 import dominateInventory from "./../../assets/Dominate/inventory.png";
 import dominateInventoryManagement from "./../../assets/Dominate/manageInventory.png";
+// Dragon News
+import dragonNews from "./../../assets/DragonNews/main.png";
+import dragonNewsUserProfile from "./../../assets/DragonNews/userProfile.png";
+import dragonNewsUserSignUp from "./../../assets/DragonNews/signUp.png";
 // Jobster
 import jobster from "./../../assets/Jobster/main.png";
 import jobsterStats from "./../../assets/Jobster/dashboardStats.png";
@@ -205,6 +209,44 @@ export const projectsData = [
     ],
     gitHubFrontEnd: "https://github.com/G-Mursalin/dominate-frontend",
     gitHubBackEnd: "https://github.com/G-Mursalin/dominate-backend",
+    category: "fullstack",
+  },
+  {
+    id: "fs4",
+    name: "Dragon News",
+    mainImage: dragonNews,
+    images: [
+      { id: 1, title: "User Profile Page", image: dragonNewsUserProfile },
+      {
+        id: 2,
+        title: "User Signup Page",
+        image: dragonNewsUserSignUp,
+      },
+    ],
+    link: "https://login-various-way.firebaseapp.com/",
+    description:
+      "One kind of news site that is completely devoted to news. This site include all types of news like political, judicial, entertainment, sports or more",
+    overView: [
+      "⛔Frontend developed by using ReactJS",
+      "⛔Backend developed by using NodeJS and ExpressJS",
+      "⛔The Website's data is stored in MongoDB and retrieved via the server-side API",
+      "⛔Implemented Firebase Authentication (Google Login , Email/Password Login-SignUp & GitHub Login-SignUP). Private Route is implemented for security purposes.",
+    ],
+    technology: [
+      "♨️ReactJS",
+      "♨️React Firebase Hook",
+      "♨️React Router",
+      "♨️React Icons",
+      "♨️React Share",
+      "♨️React Toastify",
+      "♨️React Copy to Clipboard",
+      "♨️ExpressJS",
+      "♨️NodeJS",
+      "♨️MongoDB",
+      "♨️Multer",
+    ],
+    gitHubFrontEnd: "https://github.com/G-Mursalin/dragon-news-front-end",
+    gitHubBackEnd: "https://github.com/G-Mursalin/dragon-news-back-end",
     category: "fullstack",
   },
 ];

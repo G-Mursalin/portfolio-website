@@ -1,10 +1,10 @@
 // React
 import React from "react";
-// React Router
-import { Link } from "react-router-dom";
+// assets
+import CV from "./../../../assets/golam_mursalin.pdf";
 // Components
 import HandIcon from "./HandIcon";
-import SendIcon from "./SendIcon";
+import FilesIcon from "./FilesIcon";
 
 const Data = () => {
   return (
@@ -20,10 +20,10 @@ const Data = () => {
         custom application, I'm always up for a challenge and driven to exceed
         expectations.
       </p>
-      <Link to="/contact" className="button button--flex home__btn">
-        Say Hello
-        <SendIcon />
-      </Link>
+      <a download="" href={CV} className="button button--flex">
+        Download Resume
+        <FilesIcon />
+      </a>
     </div>
   );
 };

@@ -72,3 +72,21 @@
 .work__button:hover .work__button-icon {
   transform: translateX(0.25rem);
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .work__container {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+}
+
+/* For medium devices */
+
+@media screen and (max-width: 576px) {
+  .work__container {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+}

@@ -4,11 +4,11 @@ import React from "react";
 import "./About.css";
 // assets
 import AboutImg from "./../../assets/golam-mursalin.jpg";
-import CV from "./../../assets/golam_mursalin.pdf";
 // Icons
-import FilesIcon from "./FilesIcon";
+import SendIcon from "./SendIcon";
 // Components
 import Info from "./Info/Info";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -29,10 +29,10 @@ const About = () => {
             this field is a willingness to constantly learn and adapt, and
             that's a mindset that I bring to every project I work on.
           </p>
-          <a download="" href={CV} className="button button--flex">
-            Download Resume
-            <FilesIcon />
-          </a>
+          <Link to="/contact" className="button button--flex home__btn">
+            Say Hello
+            <SendIcon />
+          </Link>
         </div>
       </div>
     </section>

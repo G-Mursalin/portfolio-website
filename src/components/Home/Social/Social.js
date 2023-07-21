@@ -7,13 +7,15 @@ const Social = () => {
         href="https://www.facebook.com/golammursalin360/"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
-        <i class="uil uil-facebook-f"></i>
+        <i className="uil uil-facebook-f"></i>
       </a>
       <a
         href="https://www.instagram.com/golam__mursalin/"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <i className="uil uil-instagram"></i>
       </a>
@@ -21,6 +23,7 @@ const Social = () => {
         href="https://github.com/G-Mursalin/"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <i className="uil uil-github-alt"></i>
       </a>

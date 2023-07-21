@@ -9,7 +9,12 @@ const WorksItems = ({ item }) => {
       <img src={item.mainImage} alt="" className="work__img" />
       <h3 className="work__title">{item.name}</h3>
       <div className="work__cart__button-container">
-        <a href={item.link} target="_blank" className="work__button">
+        <a
+          href={item.link}
+          target="_blank"
+          className="work__button"
+          rel="noreferrer"
+        >
           View Live <i className="bx bx-right-arrow-alt work__button-icon"></i>
         </a>
         <Link to={`/projects/${item.id}`} className="work__button">

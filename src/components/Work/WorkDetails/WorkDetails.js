@@ -35,7 +35,7 @@ const WorkDetails = () => {
         </div>
         <div className="work-details__data">
           <div className="work-details__live-preview">
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
               Live Preview
               <i className="bx bx-right-arrow-alt work__button-icon"></i>
             </a>
@@ -57,7 +57,7 @@ const WorkDetails = () => {
           <div className="work-details__github">
             {gitHubFrontEnd && (
               <div className="github__link-btn work-details__github-frontend">
-                <a href={gitHubFrontEnd} target="_blank">
+                <a href={gitHubFrontEnd} target="_blank" rel="noreferrer">
                   GitHub Frontend
                   <i className="bx bx-right-arrow-alt work__button-icon"></i>
                 </a>
@@ -65,7 +65,7 @@ const WorkDetails = () => {
             )}
             {gitHubBackEnd && (
               <div className="github__link-btn work-details__github-frontend">
-                <a href={gitHubBackEnd} target="_blank">
+                <a href={gitHubBackEnd} target="_blank" rel="noreferrer">
                   GitHub Backend
                   <i className="bx bx-right-arrow-alt work__button-icon"></i>
                 </a>

@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 // Emailjs
 import emailjs from "@emailjs/browser";
 // Components
-import SendIcon from "../Home/Data/SendIcon";
+import SendIcon from "../About/SendIcon";
 
 const Contact = () => {
   const form = useRef();
@@ -25,10 +25,10 @@ const Contact = () => {
     }
     emailjs
       .sendForm(
-        "service_xt9543k",
-        "template_ei4bxvs",
+        "service_12yuv8p",
+        "template_l8m3ssg",
         form.current,
-        "03dfAD4IUHoFvNWDA"
+        "30UX3rRdxJJPf4AI4"
       )
       .then(
         (result) => {
@@ -62,6 +62,7 @@ const Contact = () => {
                 href="https://mail.google.com/mail/u/0/#inbox?compose=new"
                 target="_blank"
                 className="contact__button"
+                rel="noreferrer"
               >
                 Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -75,6 +76,7 @@ const Contact = () => {
                 href="https://wa.me/8801870406364"
                 target="_blank"
                 className="contact__button"
+                rel="noreferrer"
               >
                 Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -88,6 +90,7 @@ const Contact = () => {
                 href="https://www.facebook.com/golammursalin360/"
                 target="_blank"
                 className="contact__button"
+                rel="noreferrer"
               >
                 Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -127,7 +130,7 @@ const Contact = () => {
                 placeholder="Write your project"
               ></textarea>
             </div>
-            <button className="button button--flex home__btn">
+            <button className="button button--flex">
               Send Message
               <SendIcon />
             </button>

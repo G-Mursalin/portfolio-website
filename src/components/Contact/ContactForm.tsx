@@ -1,20 +1,22 @@
 "use client";
-// React
-import React, { FormEvent, useRef } from "react";
-// React Tostify
+// NextJS
+import { FormEvent, useRef, useState } from "react";
+// React Toastify
 import { toast } from "react-toastify";
-// Emailjs
+// EmailJS
 import emailjs from "@emailjs/browser";
 // Components
 import SendIcon from "../About/SendIcon";
 
 export default function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
+  const [isSending, setIsSending] = useState(false);
 
   // Send email
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // toast.loading("Sending...");
+    const toastId = toast.loading("Sending...");
+    setIsSending(true);
 
     const target = e.target as typeof e.target & {
       name: { value: string };
@@ -23,9 +25,16 @@ export default function ContactForm() {
     };
 
     if (!(target.name.value && target.email.value && target.project.value)) {
-      toast.warning("Please provide all data");
+      toast.update(toastId, {
+        render: "Please provide all data",
+        type: "warning",
+        isLoading: false,
+        autoClose: 2500,
+      });
+      setIsSending(false);
       return;
     }
+
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
@@ -35,13 +44,26 @@ export default function ContactForm() {
       )
       .then(
         (result) => {
-          toast.success("Message send successfully");
+          toast.update(toastId, {
+            render: "Message sent successfully",
+            type: "success",
+            isLoading: false,
+            autoClose: 2500,
+          });
+          setIsSending(false);
         },
         (error) => {
-          toast.error("Sorry fail to send message");
+          toast.update(toastId, {
+            render: "Sorry, failed to send message",
+            type: "error",
+            isLoading: false,
+            autoClose: 2500,
+          });
+          setIsSending(false);
         }
       );
 
+    setIsSending(false);
     e.currentTarget.reset();
   };
 
@@ -75,7 +97,7 @@ export default function ContactForm() {
           placeholder="Write your project"
         ></textarea>
       </div>
-      <button className="button button--flex">
+      <button className="button button--flex" disabled={isSending}>
         Send Message
         <SendIcon />
       </button>

@@ -1,5 +1,3 @@
-// React
-import React from "react";
 // Components
 import ScrollIcon from "./ScrollIcon";
 

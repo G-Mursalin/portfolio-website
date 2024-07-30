@@ -1,5 +1,3 @@
-// React
-import React from "react";
 // Components
 import HandIcon from "./HandIcon";
 import FilesIcon from "./FilesIcon";

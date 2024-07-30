@@ -1,3 +1,6 @@
+// components/Social.js
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa6";
+
 export default function Social() {
   return (
     <div className="home__social">
@@ -7,7 +10,7 @@ export default function Social() {
         target="_blank"
         rel="noreferrer"
       >
-        <i className="uil uil-facebook-f"></i>
+        <FaFacebookF />
       </a>
       <a
         href="https://www.linkedin.com/in/golam-mursalin-7912871b2/"
@@ -15,7 +18,7 @@ export default function Social() {
         target="_blank"
         rel="noreferrer"
       >
-        <i className="uil uil-linkedin-alt"></i>
+        <FaLinkedinIn />
       </a>
       <a
         href="https://github.com/G-Mursalin/"
@@ -23,7 +26,7 @@ export default function Social() {
         target="_blank"
         rel="noreferrer"
       >
-        <i className="uil uil-github-alt"></i>
+        <FaGithub />
       </a>
     </div>
   );

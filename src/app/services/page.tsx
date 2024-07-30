@@ -1,5 +1,9 @@
-// CSS
+// / CSS
 import "./Services.css";
+// Icons
+import { BsGrid1X2 } from "react-icons/bs";
+import { FaRegFileCode } from "react-icons/fa";
+import { GrServerCluster } from "react-icons/gr";
 
 export default function Services() {
   return (
@@ -9,7 +13,7 @@ export default function Services() {
       <div className="services__container container grid">
         <div className="services__content">
           <div>
-            <i className="uil uil-web-grid services__icon"></i>
+            <BsGrid1X2 className="services__icon" />
             <h3 className="services__title">
               Web <br /> Design
             </h3>
@@ -22,7 +26,7 @@ export default function Services() {
 
         <div className="services__content">
           <div>
-            <i className="uil uil-arrow services__icon"></i>
+            <FaRegFileCode className="services__icon" />
             <h3 className="services__title">
               Single-page
               <br /> Application
@@ -36,7 +40,7 @@ export default function Services() {
 
         <div className="services__content">
           <div>
-            <i className="uil uil-server-connection services__icon"></i>
+            <GrServerCluster className="services__icon" />
             <h3 className="services__title">
               Full-stack <br /> Web Application
             </h3>

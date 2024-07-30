@@ -1,51 +1,9 @@
-"use client";
-// React
-import React, { FormEvent, useRef } from "react";
 //CSS
 import "./Contact.css";
-// React Tostify
-import { toast } from "react-toastify";
-// Emailjs
-import emailjs from "@emailjs/browser";
 // Components
-import SendIcon from "@/components/About/SendIcon";
+import ContactForm from "@/components/Contact/ContactForm";
 
 export default function Contact() {
-  const form = useRef();
-
-  // Send email
-  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    if (
-      !(
-        form.current?.name.value &&
-        form.current.email.value &&
-        form.current.project.value
-      )
-    ) {
-      toast.warning("Please provide all data");
-      return;
-    }
-    emailjs
-      .sendForm(
-        "service_12yuv8p",
-        "template_l8m3ssg",
-        form.current,
-        "30UX3rRdxJJPf4AI4"
-      )
-      .then(
-        (result) => {
-          toast.success("Message send successfully");
-        },
-        (error) => {
-          toast.error("Sorry fail to send message");
-        }
-      );
-
-    e.target.reset();
-  };
-
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -105,40 +63,7 @@ export default function Contact() {
 
         <div className="contact__content">
           <h3 className="contact__title">Write me your project</h3>
-          <form ref={form} onSubmit={sendEmail} className="contact__form">
-            <div className="contact__form-div">
-              <label className="contact__form-tag">Name</label>
-              <input
-                type="text"
-                name="name"
-                className="contact__form-input"
-                placeholder="Insert your name"
-              />
-            </div>
-            <div className="contact__form-div">
-              <label className="contact__form-tag">Email</label>
-              <input
-                type="email"
-                name="email"
-                className="contact__form-input"
-                placeholder="Insert your email"
-              />
-            </div>
-            <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Project</label>
-              <textarea
-                name="project"
-                cols="30"
-                rows="10"
-                className="contact__form-input"
-                placeholder="Write your project"
-              ></textarea>
-            </div>
-            <button className="button button--flex">
-              Send Message
-              <SendIcon />
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>

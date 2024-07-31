@@ -36,9 +36,12 @@ export default function Projects() {
       </div>
 
       <div className="work__container container grid">
-        {myProjectsData.map((item) => (
-          <ProjectsItems item={item} key={item.id} />
-        ))}
+        {myProjectsData
+          .slice()
+          .reverse()
+          .map((item) => (
+            <ProjectsItems item={item} key={item.id} />
+          ))}
       </div>
     </div>
   );

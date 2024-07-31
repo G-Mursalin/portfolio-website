@@ -6,6 +6,8 @@ import { projectsData, TImages } from "@/utils/projectsData";
 import Image from "next/image";
 // Icons
 import { AiOutlineArrowRight } from "react-icons/ai";
+// Components
+import NotFound from "@/components/404/NotFound";
 
 type PropTypes = {
   params: {
@@ -16,8 +18,12 @@ type PropTypes = {
 export default function ProjectDetailPage({ params }: PropTypes) {
   const project = projectsData.find((val) => val.id === params.projectId);
 
+  if (!project) {
+    return <NotFound />;
+  }
+
   return (
-    <section className="section">
+    <section className="container section">
       <h2 className="section__title">{project?.name}</h2>
       <span className="section__subtitle">{project?.description}</span>
       <div className="work-details__container container grid">

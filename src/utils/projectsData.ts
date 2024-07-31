@@ -1,15 +1,16 @@
+import { StaticImageData } from "next/image";
 import assets from "../../public/assets";
 
 // Type
 export type TImages = {
   id: number;
   title: string;
-  image: string;
+  image: StaticImageData;
 };
 
 export type TProject = {
   id: string;
-  mainImage: string;
+  mainImage: StaticImageData;
   name: string;
   images: TImages[];
   link: string;
@@ -25,32 +26,6 @@ export const projectsData: TProject[] = [
   // Front End
   {
     id: "fe1",
-    mainImage: assets.projectsImages.natours.natours,
-    name: "Natours",
-    images: [
-      {
-        id: 1,
-        title: "Tours",
-        image: assets.projectsImages.natours.natoursTours,
-      },
-      {
-        id: 2,
-        title: "Booking",
-        image: assets.projectsImages.natours.natoursBooking,
-      },
-    ],
-    link: "https://natours-1232.netlify.app/",
-    description: "A Static Website For Booking Tours Around The World",
-    overView: [
-      "⛔Designed full website using only vanilla css",
-      "⛔Used SASS for write better CSS code",
-    ],
-    technology: ["♨️HTML", "♨️CSS", "♨️SASS"],
-    gitHubFrontEnd: "https://github.com/G-Mursalin/Natours",
-    category: "frontend",
-  },
-  {
-    id: "fe2",
     mainImage: assets.projectsImages.comfySloth.comfySloth,
     name: "Comfy Sloth",
     images: [
@@ -84,6 +59,33 @@ export const projectsData: TProject[] = [
     gitHubFrontEnd: "https://github.com/G-Mursalin/Natours",
     category: "frontend",
   },
+  {
+    id: "fe2",
+    mainImage: assets.projectsImages.natours.natours,
+    name: "Natours",
+    images: [
+      {
+        id: 1,
+        title: "Tours",
+        image: assets.projectsImages.natours.natoursTours,
+      },
+      {
+        id: 2,
+        title: "Booking",
+        image: assets.projectsImages.natours.natoursBooking,
+      },
+    ],
+    link: "https://natours-1232.netlify.app/",
+    description: "A Static Website For Booking Tours Around The World",
+    overView: [
+      "⛔Designed full website using only vanilla css",
+      "⛔Used SASS for write better CSS code",
+    ],
+    technology: ["♨️HTML", "♨️CSS", "♨️SASS"],
+    gitHubFrontEnd: "https://github.com/G-Mursalin/Natours",
+    category: "frontend",
+  },
+
   // Backend
   {
     id: "be1",
@@ -126,6 +128,7 @@ export const projectsData: TProject[] = [
     category: "backend",
   },
   // Full Stack
+
   {
     id: "fs1",
     name: "Dent Care",
@@ -249,46 +252,83 @@ export const projectsData: TProject[] = [
     gitHubBackEnd: "https://github.com/G-Mursalin/dominate-backend",
     category: "fullstack",
   },
+  // {
+  //   id: "fs4",
+  //   name: "Dragon News",
+  //   mainImage: assets.projectsImages.dragonNews.dragonNews,
+  //   images: [
+  //     {
+  //       id: 1,
+  //       title: "User Profile Page",
+  //       image: assets.projectsImages.dragonNews.dragonNewsUserProfile,
+  //     },
+  //     {
+  //       id: 2,
+  //       title: "User Signup Page",
+  //       image: assets.projectsImages.dragonNews.dragonNewsUserSignUp,
+  //     },
+  //   ],
+  //   link: "https://login-various-way.firebaseapp.com/",
+  //   description:
+  //     "One kind of news site that is completely devoted to news. This site include all types of news like political, judicial, entertainment, sports or more",
+  //   overView: [
+  //     "⛔Frontend developed by using ReactJS",
+  //     "⛔Backend developed by using NodeJS and ExpressJS",
+  //     "⛔The Website's data is stored in MongoDB and retrieved via the server-side API",
+  //     "⛔Implemented Firebase Authentication (Google Login , Email/Password Login-SignUp & GitHub Login-SignUP). Private Route is implemented for security purposes.",
+  //   ],
+  //   technology: [
+  //     "♨️ReactJS",
+  //     "♨️React Firebase Hook",
+  //     "♨️React Router",
+  //     "♨️React Icons",
+  //     "♨️React Share",
+  //     "♨️React Toastify",
+  //     "♨️React Copy to Clipboard",
+  //     "♨️ExpressJS",
+  //     "♨️NodeJS",
+  //     "♨️MongoDB",
+  //     "♨️Multer",
+  //   ],
+  //   gitHubFrontEnd: "https://github.com/G-Mursalin/dragon-news-front-end",
+  //   gitHubBackEnd: "https://github.com/G-Mursalin/dragon-news-back-end",
+  //   category: "fullstack",
+  // },
   {
-    id: "fs4",
-    name: "Dragon News",
-    mainImage: assets.projectsImages.dragonNews.dragonNews,
+    id: "fs5",
+    name: "Travel Buddy",
+    mainImage: assets.projectsImages.travelBuddy.travelBuddy,
     images: [
       {
         id: 1,
-        title: "User Profile Page",
-        image: assets.projectsImages.dragonNews.dragonNewsUserProfile,
+        title: "User Dashboard",
+        image: assets.projectsImages.travelBuddy.travelBuddyUserDashboard,
       },
       {
         id: 2,
-        title: "User Signup Page",
-        image: assets.projectsImages.dragonNews.dragonNewsUserSignUp,
+        title: "Admin Dashboard",
+        image: assets.projectsImages.travelBuddy.travelBuddyAdminDashboard,
       },
     ],
-    link: "https://login-various-way.firebaseapp.com/",
+    link: "https://travel-buddy-front-end.vercel.app/",
     description:
-      "One kind of news site that is completely devoted to news. This site include all types of news like political, judicial, entertainment, sports or more",
+      "The Travel Buddy website is designed to connect travelers looking for companionship on their trips. It allows users to share their travel plans, search for trips, and find like-minded individuals to join them. The platform aims to foster a community of travelers who can explore the world together, share experiences, and make travel more enjoyable and safe.",
     overView: [
-      "⛔Frontend developed by using ReactJS",
-      "⛔Backend developed by using NodeJS and ExpressJS",
+      "⛔Frontend developed by using NextJS",
+      "⛔Backend developed by using ExpressJS",
       "⛔The Website's data is stored in MongoDB and retrieved via the server-side API",
-      "⛔Implemented Firebase Authentication (Google Login , Email/Password Login-SignUp & GitHub Login-SignUP). Private Route is implemented for security purposes.",
+      "⛔Implemented backend authentication",
     ],
     technology: [
-      "♨️ReactJS",
-      "♨️React Firebase Hook",
-      "♨️React Router",
+      "♨️NextJS",
       "♨️React Icons",
-      "♨️React Share",
       "♨️React Toastify",
-      "♨️React Copy to Clipboard",
       "♨️ExpressJS",
       "♨️NodeJS",
       "♨️MongoDB",
-      "♨️Multer",
     ],
-    gitHubFrontEnd: "https://github.com/G-Mursalin/dragon-news-front-end",
-    gitHubBackEnd: "https://github.com/G-Mursalin/dragon-news-back-end",
+    gitHubFrontEnd: "https://github.com/G-Mursalin/travel-buddy-front-end",
+    gitHubBackEnd: "https://github.com/G-Mursalin/travel-buddy-back-end",
     category: "fullstack",
   },
 ];

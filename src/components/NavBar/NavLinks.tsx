@@ -1,4 +1,6 @@
 "use client";
+// Icons
+import { GrAppsRounded } from "react-icons/gr";
 // NextJS
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -27,17 +29,20 @@ export default function NavLinks() {
     <>
       <div className={`nav__menu ${toggle ? "show-menu" : ""}`}>
         <ul className="nav__list grid">
-          {navLinks.map((link) => (
-            <li key={link.id} className="nav__item">
-              <Link
-                href={link.href}
-                className="nav__link active-link"
-                onClick={() => setToggle(!toggle)}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
+          {navLinks.map((link) => {
+            console.log(link);
+            return (
+              <li key={link.id} className="nav__item">
+                <Link
+                  href={link.href}
+                  className="nav__link active-link"
+                  onClick={() => setToggle(!toggle)}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <i
           className="uil uil-times nav__close"
@@ -45,7 +50,7 @@ export default function NavLinks() {
         ></i>
       </div>
       <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
-        <i className="uil uil-apps"></i>
+        <GrAppsRounded />
       </div>
     </>
   );

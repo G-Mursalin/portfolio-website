@@ -3,7 +3,7 @@ import "./Contact.css";
 // Components
 import ContactForm from "@/components/Contact/ContactForm";
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>

@@ -1,0 +1,96 @@
+.work-details__container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.work-details-des {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.work-details-image__container {
+  margin-bottom: 1rem;
+}
+.work-details-image__container h3 {
+  margin-bottom: 0.5rem;
+}
+
+.work-details__description {
+  text-align: justify;
+  margin-bottom: var(--mb-2-5);
+}
+
+.work-details__description h4 {
+  margin-bottom: 1rem;
+}
+.work-details__description ul li {
+  margin-bottom: 0.5rem;
+}
+
+.work-details__technology h4 {
+  margin-bottom: 1rem;
+}
+.work-details__technology span {
+  margin-right: 0.5rem;
+}
+
+.work-details__github {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.github__link-btn a {
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-details__live-preview {
+  margin-bottom: 1.5rem;
+}
+
+.github__link-btn a:hover .work__button-icon {
+  transform: translateX(0.25rem);
+}
+
+.work-details__live-preview a {
+  display: flex;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.work-details__live-preview a:hover .work__button-icon {
+  transform: translateX(0.25rem);
+}
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .work-details__container {
+    grid-template-columns: 1fr;
+    column-gap: 2.5rem;
+  }
+  .work-details__data {
+    text-align: center;
+  }
+
+  .work-details__description {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+  .work-details__description {
+    padding: 0;
+  }
+  .work-details__github {
+    display: block;
+  }
+  .github__link-btn {
+    margin-bottom: 0.5rem;
+  }
+}

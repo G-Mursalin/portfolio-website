@@ -5,7 +5,7 @@ import { BsGrid1X2 } from "react-icons/bs";
 import { FaRegFileCode } from "react-icons/fa";
 import { GrServerCluster } from "react-icons/gr";
 
-export default function Services() {
+export default function ServicesPage() {
   return (
     <section className="services section" id="services">
       <h2 className="section__title">Services</h2>

@@ -30,7 +30,6 @@ export default function NavLinks() {
       <div className={`nav__menu ${toggle ? "show-menu" : ""}`}>
         <ul className="nav__list grid">
           {navLinks.map((link) => {
-            console.log(link);
             return (
               <li key={link.id} className="nav__item">
                 <Link

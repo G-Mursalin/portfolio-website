@@ -1,5 +1,5 @@
 //CSS
-import "./Contact.css";
+import "./contact.css";
 // Components
 import ContactForm from "@/components/Contact/ContactForm";
 

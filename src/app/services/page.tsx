@@ -1,5 +1,5 @@
 // / CSS
-import "./Services.css";
+import "./services.css";
 // Icons
 import { BsGrid1X2 } from "react-icons/bs";
 import { FaRegFileCode } from "react-icons/fa";
